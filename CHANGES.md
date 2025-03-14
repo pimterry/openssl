@@ -30,7 +30,10 @@ OpenSSL 3.5
 
 ### Changes between 3.5 and 3.6 [xx XXX xxxx]
 
- * none yet
+ * Add SSL_CTX_set1_ec_point_formats() and SSL_set1_ec_point_formats() to allow
+   configuration of the EC point formats offered in TLS client hellos.
+
+   *Tim Perry*
 
 ### Changes between 3.4 and 3.5 [xx XXX xxxx]
 
@@ -255,11 +258,6 @@ OpenSSL 3.5
    exactly as many output bytes as in the initial non-encoded message.
 
    *Valerii Krygin*
-
- * Add SSL_CTX_set_ec_point_formats() and SSL_set_ec_point_formats() to allow
-   configuration of the EC point formats offered in TLS client hellos.
-
-   *Tim Perry*
 
 OpenSSL 3.4
 -----------
